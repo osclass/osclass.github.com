@@ -43,10 +43,19 @@ Por último, antes de finalizar la instalación puedes escoger unas categorías 
 
 ![Step 3][step_3]
 
-Felicidades! Ya has finalizado la instalación.
+Felicidades! Ya has finalizado la instalación. Ahora ya puedes acceder al panel de administración. A continuación dejamos una capturas de pantalla:
+
+![Login dashboard][layout_admin_login]
+![Dashboard][layout_admin_dashboard]
+![Home][layout_home]
+![Item detail page][layout_item_detail]
 
 [requirements]: http://osclass.github.com/img/tutorial/requirements.png
 [step_1]: http://osclass.github.com/img/tutorial/step1.png
 [step_2]: http://osclass.github.com/img/tutorial/step2.png
 [step_3]: http://osclass.github.com/img/tutorial/step3.png
 [finish]: http://osclass.github.com/img/tutorial/finish.png
+[layout_home]: http://osclass.github.com/img/tutorial/layout-home.png
+[layout_item_detail]: http://osclass.github.com/img/tutorial/layout-item-detail.png
+[layout_admin_login]: http://osclass.github.com/img/tutorial/layout-admin-login.png
+[layout_admin_dashboard]: http://osclass.github.com/img/tutorial/layout-admin-dashboard.png
