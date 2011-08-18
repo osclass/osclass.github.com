@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Envy Labs
+title: 
 ---
 
 Welcome!
