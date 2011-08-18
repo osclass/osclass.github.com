@@ -1,5 +1,5 @@
 ---
-title: This will be used as the title-tag of the page head
+title: Tu web de clasificados en 3 pasos
 ---
 
 OSClass - Tu web de clasificados en 3 pasos
