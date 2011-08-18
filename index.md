@@ -5,4 +5,6 @@ title:
 
 Welcome!
 
-[First image](http://osclass.github.com/img/tutorial/step1.png)
+![First image][preview]
+
+[preview]: http://osclass.org/wp-content/uploads/2011/01/single_job_board-1024x729.png
