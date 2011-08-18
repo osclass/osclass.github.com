@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>{{ page.title }}</title>
-</head>
-
-<body>
-<h1>{{ page.title }}</h1>
-{{ content }}
-</body>
+    <head>
+        <title>OSClass - {{ page.title }}</title>
+        <style type="text/css" media="screen">
+            #wrapper { margin: auto; width: 1000px; }
+            
+            #content { text-align: left; width: 750px; }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <img src="http://osclass.org/wp-content/uploads/2010/09/logo.png" alt="OSClass" title="OSClass">
+            </div>
+            <div id="main">
+                <div id="content">
+                    <h1>{{ page.title }}</h1>
+                    {{ content }}
+                </div>
+                <div id="sidebar">
+                    
+                </div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </body>
 </html>
