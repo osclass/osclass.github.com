@@ -5,4 +5,4 @@ title:
 
 Welcome!
 
-![First image][img/tutorial/step1.png]
+[First image](http://osclass.github.com/img/tutorial/step1.png)
