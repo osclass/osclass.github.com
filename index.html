@@ -6,8 +6,8 @@
         <title>osclass the free scripts classified</title>
         <meta name="title" content="osclass the free scripts classified" />
 
-        <link href="http://osclass.org/oc-content/themes/osclass_org/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="http://osclass.org/oc-content/themes/osclass_org/css/osclass.css?2012111500" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- favicon -->
         <link rel="shortcut icon" href="http://osclass.org/oc-content/themes/osclass_org/images/favicon-48.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://osclass.org/oc-content/themes/osclass_org/images/favicon-144.png">
@@ -18,10 +18,42 @@
         <script type="text/javascript" src="http://osclass.org/oc-content/themes/osclass_org/js/jquery.js"></script>
         <script type="text/javascript" src="http://osclass.org/oc-content/themes/osclass_org/js/bootstrap.js"></script>
         <style>
+        .wrapper,
+        div.gradient{
+            margin: 0 auto;
+            width:auto;
+            max-width:850px;
+            background-position: center top;
+        }
+        .well p{
+            font-size:13px;
+            text-align: center;
+            line-height:14px;
+        }
         .feature-box {
         padding: 55px 0px;
         position: relative;
         }
+        #branches-table{
+            width:100%;
+        }
+        #branches-table td{
+            width:28%;
+        }
+        #branches-table td.space{
+            width:8%;
+        }
+        #branches-table td .well{
+            height:100%;
+        }
+        .medium-claim p{
+            font-size:16px;
+            line-height: 22px;
+        }
+
+.row {
+    margin-left:0 !important;
+}
         </style>
     </head>
     <body class="home-page chrome chrome_24">
@@ -34,35 +66,119 @@
             </div>
 
             <div class="wrapper">
-                <div class="feature-box tp_center">
-                    <div class="middle claim tp_center">Getting started</div>
-                    <div class="thin claim tp_center">With osclass, get your own classifieds site for free.</div>
-                    <a href="/page/download" class="btn btn-primary btn-medium">Download now</a>
-                    <a href="http://doc.osclass.org/Contributing_to_OSClass" class="btn btn-medium">Get Involved</a>
+                <div class="feature-box ">
+                    <div class="middle claim tp_center">How to collaborate to core?</div>
+                    <div class="thin claim tp_center">Core has three main branches: Master, Hotfixes y Develop.</div>
+                    <div class="row-fluid">
+                        <div class="row">
+                            <div class="span4">
+                                <div class="well">
+                                <div class="thin claim tp_center"><a href="https://github.com/osclass/osclass/tree/master">Master</a></div>
+                                        <p>It’s the latest official version.</p>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <div class="well">
+                                <div class="thin claim tp_center"><a href="https://github.com/osclass/osclass/tree/hotfixes">Hotfixes</a></div>
+                                        <p>It’s the latest official version with bugfix releases.</p>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <div class="well">
+                                <div class="thin claim tp_center"><a href="https://github.com/osclass/osclass/tree/develop">Develop</a></div>
+                                        <p>It contains new developments for the upcoming version.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="row">
+                            <div class="span6">
+                                <p>If you want to send us the developments you have done, please define whether it is a bugfix (in this case you have to make a <a href="https://help.github.com/articles/using-pull-requests">pull request</a> to hotfixes) or a new feature (develop branch).</p>
+                            </div>
+
+                            <div class="span6">
+                                <p>However, you might also want to do a <a href="https://help.github.com/articles/fork-a-repo">fork</a> and a git clone of your project. If you are not sure how to help us, use the issues marked as Easy - they are great for the users who has been little time with the project or are new here.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        You can get the source code here:<br/>
+                        <code>git clone git://github.com/osclass/Osclass.git</code>
+                    </div>
                 </div>
 
                 <div class="gradient"></div>
-                <div class="feature-box tp_center">
-                    <div class="middle claim tp_center">Download osclass</div>
-                    <div class="thin claim tp_center">With osclass, get your own classifieds site for free.</div>
-                    <a href="/page/download" class="btn btn-primary btn-medium">Download now</a>
-                    <a href="http://doc.osclass.org/Contributing_to_OSClass" class="btn btn-medium">Get Involved</a>
+                <div class="feature-box">
+                    <div class="middle claim tp_center">How to collaborate to plugins?</div>
+                        <div class="tp_center">
+                            <p>In <a href="https://github.com/osclass/osclass-plugins">plugins repository</a> each plugin has its own branch. For example:
+                                <a href="https://github.com/osclass/osclass-plugins">Youtube</a>, <a href="https://github.com/osclass/osclass-plugins/tree/social_bookmarks">Social bookmarks</a>, <a href="https://github.com/osclass/osclass-plugins/tree/voting">Voting</a>.
+                            </p>
+                        </div>
+
+                    <div class="row-fluid" style="margin-top:25px">
+                        <div class="row">
+                            <div class="span6">
+                                <p>To get the source code you can do the <a href="https://help.github.com/articles/fork-a-repo">fork</a> or:<br>
+                                <code>git clone git://github.com/osclass/osclass-plugins.git</code></p>
+                            </div>
+
+                            <div class="span6">
+                                <p>If you want to report on a plugin error, please add a <a href="https://github.com/osclass/osclass-plugins/issues/new">new issue</a>  and try to be as scrupulous as possible.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row-fluid">
+
+
+                    </div>
+                </div>
+                <div class="gradient"></div>
+
+               <div class="feature-box">
+                    <div class="middle claim tp_center">How to collaborate to themes?</div>
+                        <div class="tp_center">
+                            <p>In <a href="https://github.com/osclass/osclass-themes">themes repository</a> each theme has its own branch. For example:
+                                <a href="https://github.com/osclass/osclass-themes/tree/realestate">Real estate</a>, <a href="https://github.com/osclass/osclass-themes/tree/seeker">Seeker</a>.
+                            </p>
+                        </div>
+
+                    <div class="row-fluid" style="margin-top:25px">
+                        <div class="row">
+                            <div class="span6">
+                                <p>To get the source code you can do the <a href="https://help.github.com/articles/fork-a-repo">fork</a> or:<br>
+                                <code>git clone git://github.com/osclass/osclass-themes.git</code></p>
+                            </div>
+
+                            <div class="span6">
+                                <p>If you want to report on a theme error, please add a <a href="https://github.com/osclass/osclass-themes/issues/new">new issue</a> and specify the browser and the operating system that you are using.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row-fluid">
+
+
+                    </div>
                 </div>
 
-                <div class="gradient"></div>
-                <div class="feature-box tp_center">
-                    <div class="middle claim tp_center">Get involved!</div>
-                    <div class="thin claim tp_center">With osclass, get your own classifieds site for free.</div>
-                    <a href="/page/download" class="btn btn-primary btn-medium">Download now</a>
-                    <a href="http://doc.osclass.org/Contributing_to_OSClass" class="btn btn-medium">Get Involved</a>
-                </div>
 
                 <div class="gradient"></div>
-                <div class="feature-box tp_center">
-                    <div class="middle claim tp_center">How to report issues</div>
-                    <div class="thin claim tp_center">With osclass, get your own classifieds site for free.</div>
-                    <a href="/page/download" class="btn btn-primary btn-medium">Download now</a>
-                    <a href="http://doc.osclass.org/Contributing_to_OSClass" class="btn btn-medium">Get Involved</a>
+                <div class="feature-box">
+                    <div class="middle claim tp_center">How to collaborate to translations?</div>
+                    <div class="row-fluid tp_center">
+                        <div class="row">
+                            <div class="span1"></div>
+                            <div class="span10">
+                                <p>If you want to help us to translate Osclass, its themes and plugins, please go to <a href="http://translate.osclass.org/">translate.osclass.org</a>. If you do not have an account, you can <a href="http://osclass.org/contact">contact us</a> and request one. Please indicate a language you want to translate. To learn more, please visit "<a href="http://translate.osclass.org/getting-started">Getting Started</a>".</p>
+                            </div>
+                            <div class="span1"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div id="footer">
@@ -73,5 +189,43 @@
             </div>
 
         </div> <!-- container -->
+        <script>
+        /*
+        $.fn.equalHeights = function(px) {
+    $(this).each(function(){
+        var currentTallest = 0;
+        $(this).children().each(function(i){
+            if ($(this).height() > currentTallest) { currentTallest = $(this).height(); }
+        });
+    if (!px && Number.prototype.pxToEm) currentTallest = currentTallest.pxToEm(); //use ems unless px is specified
+        // for ie6, set height since min-height isn't supported
+        if ($.browser.msie && $.browser.version == 6.0) { $(this).children().css({'height': currentTallest}); }
+        $(this).children().css({'min-height': currentTallest});
+    });
+    return this;
+};
+
+// just in case you need it...
+$.fn.equalWidths = function(px) {
+    $(this).each(function(){
+        var currentWidest = 0;
+        $(this).children().each(function(i){
+                if($(this).width() > currentWidest) { currentWidest = $(this).width(); }
+        });
+        if(!px && Number.prototype.pxToEm) currentWidest = currentWidest.pxToEm(); //use ems unless px is specified
+        // for ie6, set width since min-width isn't supported
+        if ($.browser.msie && $.browser.version == 6.0) { $(this).children().css({'width': currentWidest}); }
+        $(this).children().css({'min-width': currentWidest});
+    });
+    return this;
+};
+        $('#branches-table .well').equalHeights();*/
+        var highestCol = Math.max(
+            $('.row .well:eq(0)').height(),
+            $('.row .well:eq(1)').height(),
+            $('.row .well:eq(2)').height()
+        );
+        $('.row .well').height(highestCol);
+        </script>
     </body>
 </html>
