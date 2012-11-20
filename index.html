@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <title>osclass the free scripts classified</title>
+        <title>Osclass the free scripts classified</title>
         <meta name="title" content="osclass the free scripts classified" />
 
         <link href="http://osclass.org/oc-content/themes/osclass_org/css/osclass.css?2012111500" rel="stylesheet" type="text/css" />
@@ -122,7 +122,7 @@
         <div id="container">
             <div id="header" class="navbar-fixed-top">
             <div class="wrapper">
-            <a id="logo" href="http://osclass.org/"><strong><img alt="osclass the free scripts classified" src="http://osclass.org/oc-content/themes/osclass_org/images/logo.jpg" /></strong></a>
+            <a id="logo" href="http://osclass.org/"><strong><img alt="Osclass the free scripts classified" src="http://osclass.org/oc-content/themes/osclass_org/images/logo.jpg" /></strong></a>
             </div>
             <div id="hshadow"></div>
             </div>
@@ -139,7 +139,7 @@
                   <img src="img/ninja.png" />
                 </div>
                 <div class="feature-box ">
-                    <div class="middle claim tp_center">How to collaborate to core?</div>
+                    <div id="core" class="middle claim tp_center">How to collaborate to core?</div>
                     <div class="thin claim tp_center">Core has three main branches: Master, Hotfixes and Develop.</div>
                     <div class="row-fluid">
                         <div class="row">
@@ -183,7 +183,7 @@
 
                 <div class="gradient"></div>
                 <div class="feature-box">
-                    <div class="middle claim tp_center">How to collaborate to plugins?</div>
+                    <div id="plugins" class="middle claim tp_center">How to collaborate to plugins?</div>
                         <div class="tp_center">
                             <p>In <a href="https://github.com/osclass/osclass-plugins">plugins repository</a> each plugin has its own branch. For example:
                                 <a href="https://github.com/osclass/osclass-plugins">Youtube</a>, <a href="https://github.com/osclass/osclass-plugins/tree/social_bookmarks">Social bookmarks</a>, <a href="https://github.com/osclass/osclass-plugins/tree/voting">Voting</a>.
@@ -211,7 +211,7 @@
                 <div class="gradient"></div>
 
                <div class="feature-box">
-                    <div class="middle claim tp_center">How to collaborate to themes?</div>
+                    <div id="themes" class="middle claim tp_center">How to collaborate to themes?</div>
                         <div class="tp_center">
                             <p>In <a href="https://github.com/osclass/osclass-themes">themes repository</a> each theme has its own branch. For example:
                                 <a href="https://github.com/osclass/osclass-themes/tree/realestate">Real estate</a>, <a href="https://github.com/osclass/osclass-themes/tree/seeker">Seeker</a>.
@@ -240,7 +240,7 @@
 
                 <div class="gradient"></div>
                 <div class="feature-box">
-                    <div class="middle claim tp_center">How to collaborate to translations?</div>
+                    <div id="translations" class="middle claim tp_center">How to collaborate to translations?</div>
                     <div class="row-fluid tp_center">
                         <div class="row">
                             <div class="span1"></div>
@@ -261,43 +261,13 @@
             </div>
 
         </div> <!-- container -->
-        <script>
-        /*
-        $.fn.equalHeights = function(px) {
-    $(this).each(function(){
-        var currentTallest = 0;
-        $(this).children().each(function(i){
-            if ($(this).height() > currentTallest) { currentTallest = $(this).height(); }
-        });
-    if (!px && Number.prototype.pxToEm) currentTallest = currentTallest.pxToEm(); //use ems unless px is specified
-        // for ie6, set height since min-height isn't supported
-        if ($.browser.msie && $.browser.version == 6.0) { $(this).children().css({'height': currentTallest}); }
-        $(this).children().css({'min-height': currentTallest});
-    });
-    return this;
-};
-
-// just in case you need it...
-$.fn.equalWidths = function(px) {
-    $(this).each(function(){
-        var currentWidest = 0;
-        $(this).children().each(function(i){
-                if($(this).width() > currentWidest) { currentWidest = $(this).width(); }
-        });
-        if(!px && Number.prototype.pxToEm) currentWidest = currentWidest.pxToEm(); //use ems unless px is specified
-        // for ie6, set width since min-width isn't supported
-        if ($.browser.msie && $.browser.version == 6.0) { $(this).children().css({'width': currentWidest}); }
-        $(this).children().css({'min-width': currentWidest});
-    });
-    return this;
-};
-        $('#branches-table .well').equalHeights();*/
-        var highestCol = Math.max(
-            $('.row .well:eq(0)').height(),
-            $('.row .well:eq(1)').height(),
-            $('.row .well:eq(2)').height()
-        );
-        $('.row .well').height(highestCol);
+        <script type="text/javascript">
+            var highestCol = Math.max(
+                $('.row .well:eq(0)').height(),
+                $('.row .well:eq(1)').height(),
+                $('.row .well:eq(2)').height()
+            );
+            $('.row .well').height(highestCol);
         </script>
     </body>
 </html>
