@@ -50,10 +50,67 @@
             font-size:16px;
             line-height: 22px;
         }
-
-.row {
-    margin-left:0 !important;
-}
+        .row {
+            margin-left:0 !important;
+        }
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-warning,
+        .btn-warning:hover,
+        .btn-danger,
+        .btn-danger:hover,
+        .btn-success,
+        .btn-success:hover,
+        .btn-info,
+        .btn-info:hover,
+        .btn-inverse,
+        .btn-inverse:hover {
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          color: #ffffff;
+        }
+        .btn-primary.active,
+        .btn-warning.active,
+        .btn-danger.active,
+        .btn-success.active,
+        .btn-info.active,
+        .btn-inverse.active {
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .btn-primary {
+          background-color: #33CDE0;
+          background-image: -moz-linear-gradient(top, #34CAD6, #32C3CE);
+          background-image: -ms-linear-gradient(top, #34CAD6, #32C3CE);
+          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#34CAD6), to(#32C3CE));
+          background-image: -webkit-linear-gradient(top, #34CAD6, #32C3CE);
+          background-image: -o-linear-gradient(top, #34CAD6, #32C3CE);
+          background-image: linear-gradient(top, #34CAD6, #32C3CE);
+          background-repeat: repeat-x;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#34CAD6', endColorstr='#32C3CE', GradientType=0);
+          border-color: #33CDE0 #32C3CE #003580;
+          border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+          filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+        }
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+          background-color: #32C3CE;
+          background-position: 0 -54px;
+        }
+        .btn-primary:active,
+        .btn-primary.active {
+          background-color: #004099 \9;
+        }
+        .hero-unit{
+            margin-top:60px;
+        }
+        .hero-unit h1.middle{
+        line-height: 32px;
+        }
+        .hero-unit p{
+            line-height: 22px;
+        }
         </style>
     </head>
     <body class="home-page chrome chrome_24">
@@ -66,6 +123,15 @@
             </div>
 
             <div class="wrapper">
+                <div class="hero-unit">
+                  <h1 class="middle claim">Get your own classified<br>website with Osclass for free</h1>
+                  <p>Build your own Osclass installation and start advertising<br>real estate, jobs or whatever you want- in minutes!</p>
+                  <p>
+                    <a class="btn btn-primary btn-large" href="http://osclass.org/page/download">
+                      Download
+                    </a>
+                  </p>
+                </div>
                 <div class="feature-box ">
                     <div class="middle claim tp_center">How to collaborate to core?</div>
                     <div class="thin claim tp_center">Core has three main branches: Master, Hotfixes y Develop.</div>
